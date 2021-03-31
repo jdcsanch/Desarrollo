@@ -1,0 +1,193 @@
+/* hice algunas mejoras */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #060504;
+ /* color: rgb(236, 120, 11);*/
+  font-size: 1.2rem; /*tamaño de las letras*/
+  line-height: 1.6em; /* interlineado */
+  margin: 0;
+  background-color: #F8FFEE;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: rgb(236, 120, 11);
+}
+
+h2 {
+  color: rgb(236, 120, 11);
+}
+
+/* parrafos */
+p {
+  margin-bottom: 1.7em; /*margen inferior funciona como enter entre parrafos*/
+  font-size: 1.5rem; /*tamaño de las letras*/
+  font-style: oblique;
+}
+
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #1e6;
+	color: #fff
+}
+
+#logotipo img {
+  width: 700px;
+  height: 190px;
+}
+
+/* Tabla */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: #F3DBCF;
+  color: black;
+}
+
+/* Botones */
+.ir {
+  color:black;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 9px;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  float:none;
+  margin-left: 40%;
+  
+}
+.ir:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Cajas de texto */
+.pedir{
+  border: 1px solid #0099CC;
+  border-radius: 7px;
+  padding: 3px 80px;
+  text-align: center;
+  font-size: 17px;
+  float:none;
+  margin-left: 5%;
+}
+
+.cmb{
+  font-size: 15px;
+  font-family: 'Verdana', sans-serif;
+  color: black;
+  padding: 3px 30px;
+  width: 300px;
+  max-width: 100%; 
+  border: 1px solid #0099CC;
+  margin-left: 5%;
+  border-radius: 7px;
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+  
+}
+
+
+.menu-icon {
+  display: none;
+}
+
+/* todos los "ul" que esten dentro de "navigation" */
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+}
+
+.labeles
+{  
+    margin-top: 15px; 
+	color: #0D004F;
+}
+
+
+.navigation ul li a:hover {
+  background: #cc4444;
+}
+
+.main {
+  padding-top: 12rem;
+  
+}
+
+/*PIE DE PAGINA*/
+.footer {
+  background: #ade3f3;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+
+.menu-link{
+    color: black;
+}
+
+.fb{
+    color: blue;
+}
+/* REPONSIVE */
+/* todas las caracteristicas que se mostraran a continuancion seran cuando tenga un ancho maximo de 767px */
+
+@media only screen and (max-width: 767px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation{
+        width: 100%;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+      
+    .navigation ul li {
+        display: block;
+      }
+      
+      /* los enlaces dentro del menu */
+      .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s linear;
+        border-radius: 5px;
+      }
+      
+      .navigation ul li a:hover {
+        background: #cc4444;
+      }
+}
